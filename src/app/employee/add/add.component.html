@@ -1,0 +1,62 @@
+<form>
+    <fieldset class="uk-fieldset">
+        <legend class="uk-legend">Add Employee</legend>
+
+        <div class="uk-margin">
+            <mat-label>First Name</mat-label>
+            <input class="uk-input" type="text" placeholder="First Name" required>
+        </div>
+
+        <div class="uk-margin">
+            <mat-label>Last Name</mat-label>
+            <input class="uk-input" type="text" placeholder="Last Name" required>
+        </div>
+
+        <div class="uk-margin">
+            <mat-label>Username</mat-label>
+            <input class="uk-input" type="text" placeholder="Username" required>
+        </div>
+
+        <div class="uk-margin">
+            <mat-label>Email</mat-label>
+            <input class="uk-input" type="email" placeholder="Email" required>
+        </div>
+
+        <div class="uk-margin">
+            <mat-label>Birth Date</mat-label>
+        </div>
+        <div class="uk-margin">
+            <mat-form-field appearance="fill">
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+        </div>
+
+        <div class="uk-margin">
+            <mat-label>Basic Salary</mat-label>
+        </div>
+        <div class="uk-margin">
+            <mat-form-field appearance="fill" floatLabel="always">
+                <input matInput type="number" class="example-right-align" placeholder="xx.xxx" required>
+                <span matPrefix>Rp&nbsp;</span>
+                <span matSuffix>.00</span>
+              </mat-form-field>
+        </div>
+        <div class="uk-margin">
+            <mat-label>Status</mat-label>
+            <input class="uk-input" type="text" placeholder="Status" required>
+        </div>
+        <div class="uk-margin">
+            <mat-label>Group</mat-label>
+        </div>
+        <div class="uk-margin">
+            <ng-select2 [data]="exampleData">
+            </ng-select2>
+        </div>
+    </fieldset>
+    
+    <button mat-raised-button routerLink="/employee/list">Cancel</button>
+    <button mat-raised-button color="primary" routerLink="">Save</button>
+</form>

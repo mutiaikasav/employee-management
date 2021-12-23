@@ -1,0 +1,17 @@
+<ng-container class="jumbotron">
+    <!--toolbar-->
+    <mat-toolbar class="example-header">
+        <span routerLink="/employee/list">EMPLOYEE MANAGEMENT</span>
+        <span class="spacer"></span>
+    </mat-toolbar>
+    <!--end toolbar-->
+    
+    <mat-sidenav-container class="example-container">
+        <!--sidenav content-->
+        <mat-sidenav-content style="padding: 20px;">
+        <!--halaman-halaman tampil disini-->
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+        <!--end sidenav content-->
+    </mat-sidenav-container>   
+</ng-container>
