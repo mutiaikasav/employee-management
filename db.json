@@ -42,7 +42,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username":"user5",
@@ -86,7 +86,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username":"user9",
@@ -108,7 +108,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user11",
@@ -119,7 +119,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user12",
@@ -130,7 +130,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user13",
@@ -152,7 +152,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user15",
@@ -163,7 +163,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user16",
@@ -174,7 +174,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user17",
@@ -185,7 +185,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user18",
@@ -207,7 +207,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user20",
@@ -218,7 +218,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user21",
@@ -240,7 +240,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user23",
@@ -273,7 +273,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user26",
@@ -284,7 +284,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user27",
@@ -295,7 +295,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user28",
@@ -328,7 +328,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user31",
@@ -383,7 +383,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user36",
@@ -394,7 +394,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user37",
@@ -438,7 +438,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user41",
@@ -471,7 +471,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user44",
@@ -482,7 +482,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user45",
@@ -548,7 +548,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user51",
@@ -592,7 +592,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user55",
@@ -603,7 +603,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user56",
@@ -614,7 +614,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user57",
@@ -658,7 +658,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user61",
@@ -669,7 +669,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user62",
@@ -691,7 +691,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user64",
@@ -801,7 +801,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user74",
@@ -834,7 +834,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user77",
@@ -867,7 +867,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user80",
@@ -878,7 +878,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user81",
@@ -889,7 +889,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user82",
@@ -911,7 +911,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user84",
@@ -933,7 +933,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user86",
@@ -944,7 +944,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user87",
@@ -955,7 +955,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user88",
@@ -977,7 +977,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user90",
@@ -988,7 +988,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user91",
@@ -999,7 +999,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user92",
@@ -1010,7 +1010,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user93",
@@ -1021,7 +1021,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user94",
@@ -1043,7 +1043,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user96",
@@ -1076,7 +1076,7 @@
             "birthDate": "1997-01-01",
             "status": "Contract",
             "group": "Group C",
-            "completed": true
+            "description": ""
         },
         {
             "username": "user99",

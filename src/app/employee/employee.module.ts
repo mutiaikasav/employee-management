@@ -8,6 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { MaterialDesign } from '../material/material';
 import { NgSelect2Module } from 'ng-select2';
 import { FormsModule } from '@angular/forms';
+import { DataTablesModule } from 'angular-datatables';
+
 
 const routes: Routes = [
   {
@@ -42,7 +44,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     MaterialDesign,
     NgSelect2Module,
-    FormsModule
+    FormsModule,
+    DataTablesModule
   ]
 })
 export class EmployeeModule { }

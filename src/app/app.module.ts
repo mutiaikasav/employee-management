@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { MaterialDesign } from './material/material';
 import { NgSelect2Module } from 'ng-select2';
 import { HttpClientModule } from '@angular/common/http';
+import { DataTablesModule } from 'angular-datatables';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     MaterialDesign,
     NgSelect2Module,
-    HttpClientModule
+    HttpClientModule,
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
