@@ -1,4 +1,3 @@
-import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormBuilder, FormGroup } from '@angular/forms';
 import { Select2OptionData } from 'ng-select2';
@@ -20,15 +19,16 @@ export class AddComponent implements OnInit {
   employeeModel : EmployeeModel = new EmployeeModel();
   
   myDate = new Date();
+  maxDate : Date;
 
   latest_date : string;
 
   constructor(private formbuilber: FormBuilder,
-  private api : RestService,
-  private datepipe : DatePipe) { }
+  private api : RestService) { }
   
 
   ngOnInit(): void {
+    this.maxDate = new Date();
     this.formValue = this.formbuilber.group({
       firstName: [''],
       lastName: [''],
@@ -84,7 +84,6 @@ export class AddComponent implements OnInit {
   }
 
   postEmployeeDetail(){
-    let latest_date =this.datepipe.transform(this.myDate, 'yyyy-MM-dd');
     this.employeeModel.firstName = this.formValue.value.firstName;
     this.employeeModel.lastName = this.formValue.value.lastName;
     this.employeeModel.username = this.formValue.value.username;
@@ -93,7 +92,6 @@ export class AddComponent implements OnInit {
     this.employeeModel.birthDate = this.formValue.value.birthDate;
     this.employeeModel.status = this.formValue.value.status;
     this.employeeModel.group = this.formValue.value.group;
-    this.employeeModel.description = this.latest_date;
     
     this.api.postEmployee(this.employeeModel)
     .subscribe(res=>{
