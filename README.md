@@ -1,4 +1,6 @@
 # Source code employee-management
-login dengan :
+
+clone aplikasi dan 
+jalankan, login dengan :
 username = admin
 password = assesment2021
