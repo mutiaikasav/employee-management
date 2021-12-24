@@ -1,6 +1,9 @@
+import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormBuilder, FormGroup } from '@angular/forms';
 import { Select2OptionData } from 'ng-select2';
+import { RestService } from 'src/app/rest.service';
+import { EmployeeModel } from './add.model';
 
 @Component({
   selector: 'app-add',
@@ -12,9 +15,30 @@ export class AddComponent implements OnInit {
   
   public formControl = new FormControl();
   public value: string;
-  constructor() { }
+
+  formValue !: FormGroup;
+  employeeModel : EmployeeModel = new EmployeeModel();
+  
+  myDate = new Date();
+
+  latest_date : string;
+
+  constructor(private formbuilber: FormBuilder,
+  private api : RestService,
+  private datepipe : DatePipe) { }
+  
 
   ngOnInit(): void {
+    this.formValue = this.formbuilber.group({
+      firstName: [''],
+      lastName: [''],
+      username: [''],
+      email: [''],
+      birthDate: [''],
+      basicSalary: [''],
+      status: [''],
+      group: ['']
+    })
     this.exampleData = [
       {
         id: 'groupA',
@@ -59,4 +83,26 @@ export class AddComponent implements OnInit {
     ];
   }
 
+  postEmployeeDetail(){
+    let latest_date =this.datepipe.transform(this.myDate, 'yyyy-MM-dd');
+    this.employeeModel.firstName = this.formValue.value.firstName;
+    this.employeeModel.lastName = this.formValue.value.lastName;
+    this.employeeModel.username = this.formValue.value.username;
+    this.employeeModel.email = this.formValue.value.email;
+    this.employeeModel.basicSalary = this.formValue.value.basicSalary;
+    this.employeeModel.birthDate = this.formValue.value.birthDate;
+    this.employeeModel.status = this.formValue.value.status;
+    this.employeeModel.group = this.formValue.value.group;
+    this.employeeModel.description = this.latest_date;
+    
+    this.api.postEmployee(this.employeeModel)
+    .subscribe(res=>{
+      console.log(res);
+      alert("Employee Added Succesfully");
+      this.formValue.reset;
+    },
+    err=>{
+      alert("Something went wrong");
+    })
+  }
 }

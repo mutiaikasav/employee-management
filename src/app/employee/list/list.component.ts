@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { RestService } from 'src/app/rest.service';
 
 @Component({
   selector: 'app-list',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
+  formValue !: FormGroup;
+  public employeeData !: any;
 
-  constructor() { }
+  constructor(private api : RestService,private formbuilber: FormBuilder) { }
 
   public dataa = [
     {
@@ -125,12 +129,48 @@ export class ListComponent implements OnInit {
   dtOptions: DataTables.Settings = {};
 
   ngOnInit(): void {
+    this.getAllEmployee();
     this.dtOptions = {
-      pagingType : 'full numbers',
-      pageLength : 5,
+      pagingType : 'full_numbers',
+      pageLength : 10,
       lengthMenu : [5, 10, 15],
       processing : true
     }
+    this.formValue = this.formbuilber.group({
+      firstName: [''],
+      lastName: [''],
+      username: [''],
+      email: [''],
+      birthDate: [''],
+      basicSalary: [''],
+      status: [''],
+      group: ['']
+    })
   }
 
+  getAllEmployee(){
+    this.api.getEmployee()
+    .subscribe(res=>{
+      this.employeeData = res;
+    })
+  }
+  
+  deleteEmployee(row : any){
+    this.api.deleteEmployee(row.username)
+    .subscribe(res=>{
+      alert("Employee Deleted");
+      this.getAllEmployee();
+    })
+  }
+
+  detail(row : any){
+    this.formValue.controls['firstName'].setValue(row.firstName);
+    this.formValue.controls['lastName'].setValue(row.lastName);
+    this.formValue.controls['username'].setValue(row.username);
+    this.formValue.controls['email'].setValue(row.email);
+    this.formValue.controls['basicSalary'].setValue("Rp "+row.basicSalary+",00");
+    this.formValue.controls['birthDate'].setValue(row.birthDate);
+    this.formValue.controls['status'].setValue(row.status);
+    this.formValue.controls['group'].setValue(row.group);
+  }
 }
